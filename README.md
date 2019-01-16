@@ -1,24 +1,33 @@
-# README
+# DuckLight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![ducklight](https://seeklogo.com/images/D/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png)
 
-Things you may want to cover:
+A [Project Blacklight](http://projectblacklight.org/) application for Lucene indexes built by [Anserini](https://github.com/castorini/Anserini).
 
-* Ruby version
+## Requirements
 
-* System dependencies
+* [Ruby](https://www.ruby-lang.org/en/) 2.2 or later
+* Java 8+
+* Solr 7.6.0+
+* [solr_wrapper](https://github.com/cbeer/solr_wrapper) (for development)
 
-* Configuration
+## Usage
 
-* Database creation
+### dev
 
-* Database initialization
+* Get an Anserini Lucene index
+* Get an Ansersini Solr [configset](https://github.com/castorini/SolrAnserini)
+* Start Solr with an Anserini Solr configset
+  * `solr_wrapper -i /path/to/solr-7.6.0 -d /path/to/SolrAnserini/configsets/core17 -n core17 --persist`
+* `git clone git@github.com:ruebot/ducklight.git`
+* ` cd ducklight`
+* `bundle install`
+* `rails db:migrate`
+* `rails s`
+* http://localhost:3000
 
-* How to run the test suite
+### prod
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+This application is available as open source under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
