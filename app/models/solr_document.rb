@@ -28,7 +28,8 @@ class SolrDocument
       embedded_tweet = embed_query_response_json['html']
       embedded_tweet.html_safe
     else
-      'Sorry, you are not authorized to see this status.'
+      #'Sorry, you are not authorized to see this status.'
+      nil
     end
   end
 end
