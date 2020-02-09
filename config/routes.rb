@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
   concern :exportable, Blacklight::Routes::Exportable.new
 
-  resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
+  resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog', constraints: { id: /[a-zA-Z0-9_.:]+/ } do
     concerns :exportable
   end
 
