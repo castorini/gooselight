@@ -13,9 +13,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'topics', :label => 'Topic', :limit => 20, :sort => 'index'
     config.add_facet_field 'subjects', :label => 'Subject', :limit => 20, :sort => 'index'
     config.add_facet_field 'authors', :label => 'Author', :limit => 20, :sort => 'index'
-    config.add_facet_field 'publisher', :label => 'Publisher', :limit => 20, :sort => 'index'
     config.add_facet_field 'journals', :label => 'Journal', :limit => 20, :sort => 'index'
-    config.add_facet_field 'language', :label => 'Language', :limit => 20, :sort => 'index'
 
     config.add_facet_fields_to_solr_request!
 
@@ -30,10 +28,6 @@ class CatalogController < ApplicationController
 
     config.add_search_field 'authors', label: 'Author' do |field|
       field.solr_parameters = { :df => 'authors' }
-    end
-
-    config.add_search_field 'publisher', label: 'Publisher' do |field|
-      field.solr_parameters = { :df => 'publisher' }
     end
 
     config.add_search_field 'journals', label: 'Journals' do |field|
