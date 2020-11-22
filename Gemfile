@@ -68,7 +68,7 @@ group :development, :test do
 end
 
 gem 'rsolr', '>= 1.0', '< 3'
-gem 'bootstrap', '~> 4.0'
+gem 'bootstrap', '~> 4.3'
 gem 'popper_js'
 gem 'twitter-typeahead-rails', '0.11.1.pre.corejavascript'
 gem 'jquery-rails'
