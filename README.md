@@ -1,8 +1,11 @@
 # GooseLight
 
-![gooselight](https://seeklogo.com/images/D/Duck_Hunt-logo-8044A0A3B6-seeklogo.com.png)
+![gooselight](Duck_Hunt-logo.png)
 
-A [Project Blacklight](http://projectblacklight.org/) application for Lucene indexes built by [Anserini](https://github.com/castorini/Anserini).
+A [Project Blacklight](http://projectblacklight.org/) application for Lucene indexes built by [Anserini](https://github.com/castorini/anserini).
+
+Gooselight is no longer being actively developed or maintained.
+See [Covidex](https://covidex.ai/) as the next iteration of a search frontend for Anserini.
 
 ## Requirements
 
